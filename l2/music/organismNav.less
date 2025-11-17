@@ -1,0 +1,71 @@
+/// <mls shortName="organismNav" project="102023" folder="music" groupName="music" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-nav
+music--organism-nav-102023 {
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: @space-16 @space-24;
+    background-color: @bg-primary-color;
+    border-bottom: 1px solid @grey-color;
+  }
+  .logo {
+    font-family: @font-family-primary;
+    font-size: @font-size-24;
+    font-weight: @font-weight-bold;
+    color: @text-secondary-color;
+  }
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu-item {
+    margin-left: @space-24;
+  }
+  .menu-link {
+    color: @text-primary-color;
+    text-decoration: none;
+    font-size: @font-size-16;
+    transition: color @transition-normal;
+    &:hover {
+      color: @text-secondary-color;
+    }
+  }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: @text-primary-color;
+    margin: 3px 0;
+    transition: @transition-normal;
+  }
+  @media (max-width: @breakpoint-medium) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: @bg-primary-color;
+      padding: @space-16;
+      &.open {
+        display: flex;
+      }
+    }
+    .hamburger {
+      display: flex;
+    }
+  }
+}
+
+

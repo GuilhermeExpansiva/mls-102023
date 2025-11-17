@@ -1,0 +1,49 @@
+/// <mls shortName="organismCtaButtons" project="102023" folder="music" groupName="music" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-cta-buttons
+music--organism-cta-buttons-102023 {
+  .cta-container {
+    padding: @space-48 @space-24;
+    background-color: @bg-secondary-color-lighter;
+    text-align: center;
+  }
+  .cta-title {
+    font-family: @font-family-primary;
+    font-size: @font-size-24;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+    margin-bottom: @space-32;
+  }
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: @space-24;
+  }
+  .cta-button {
+    background-color: @active-color;
+    color: @bg-primary-color;
+    padding: @space-16 @space-32;
+    border: none;
+    border-radius: 4px;
+    font-size: @font-size-16;
+    font-weight: @font-weight-bold;
+    cursor: pointer;
+    transition: background-color @transition-normal;
+    &:hover {
+      background-color: @active-color-hover;
+    }
+  }
+  @media (max-width: @breakpoint-medium) {
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    .cta-button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+

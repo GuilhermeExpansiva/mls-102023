@@ -1,0 +1,34 @@
+/// <mls shortName="contactPage" project="102023" folder="music" groupName="music" enhancement="_100554_enhancementStyle" />
+
+ 
+// page: contact-page-100000
+music--contact-page-102023 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  main {
+    flex: 1;
+    padding-top: @space-64; // Assuming nav height
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: @space-48;
+  }
+  footer {
+    margin-top: auto;
+  }
+  @media (max-width: @breakpoint-medium) {
+    main {
+      padding-top: @space-40;
+      gap: @space-32;
+    }
+  }
+}
+
+

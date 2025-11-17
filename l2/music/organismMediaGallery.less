@@ -1,0 +1,93 @@
+/// <mls shortName="organismMediaGallery" project="102023" folder="music" groupName="music" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-media-gallery
+music--organism-media-gallery-102023 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 @space-16;
+  .gallery-title {
+    font-family: @font-family-primary;
+    font-size: @font-size-40;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+    text-align: center;
+    margin-bottom: @space-32;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: @space-24;
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform @transition-normal;
+      &:hover {
+        transform: scale(1.05);
+      }
+      img, video {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+      }
+      .lightbox-trigger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity @transition-normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: @bg-primary-color-lighter;
+        font-size: @font-size-24;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 90%;
+      img, video {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .close-btn {
+      position: absolute;
+      top: @space-16;
+      right: @space-16;
+      color: @bg-primary-color-lighter;
+      font-size: @font-size-24;
+      cursor: pointer;
+    }
+  }
+  @media (max-width: @breakpoint-medium) {
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: @space-16;
+    }
+  }
+}
+
+

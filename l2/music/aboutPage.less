@@ -1,0 +1,28 @@
+/// <mls shortName="aboutPage" project="102023" folder="music" groupName="music" enhancement="_100554_enhancementStyle" />
+
+ 
+// page: about-page-100000
+music--about-page-102023 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  main {
+    flex: 1;
+    padding: @space-32 @space-16;
+  }
+  footer {
+    margin-top: auto;
+  }
+  @media (min-width: @breakpoint-medium) {
+    main {
+      padding: @space-48 @space-32;
+    }
+  }
+}
+
+
