@@ -1,0 +1,39 @@
+/// <mls shortName="organismFooter" project="102023" folder="music" groupName="music" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-footer
+music--organism-footer-102023 {
+  .footer-container {
+    padding: @space-24;
+    background-color: @bg-primary-color-darker;
+    color: @text-primary-color-lighter;
+    text-align: center;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: @space-24;
+    margin-bottom: @space-16;
+  }
+  .footer-link {
+    color: @text-primary-color-lighter;
+    text-decoration: none;
+    font-size: @font-size-16;
+    transition: color @transition-normal;
+    &:hover {
+      color: @text-secondary-color-lighter;
+    }
+  }
+  .footer-copyright {
+    font-size: @font-size-12;
+    color: @text-primary-color-lighter;
+  }
+  @media (max-width: @breakpoint-medium) {
+    .footer-links {
+      flex-direction: column;
+      gap: @space-16;
+    }
+  }
+}
+
+

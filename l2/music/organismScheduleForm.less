@@ -1,0 +1,73 @@
+/// <mls shortName="organismScheduleForm" project="102023" folder="music" groupName="music" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-schedule-form
+music--organism-schedule-form-102023 {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: @bg-secondary-color-lighter;
+  padding: @space-32;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  .form-title {
+    font-family: @font-family-primary;
+    font-size: @font-size-24;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+    margin-bottom: @space-24;
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: @space-16;
+    label {
+      display: block;
+      font-family: @font-family-primary;
+      font-size: @font-size-16;
+      font-weight: @font-weight-normal;
+      color: @text-primary-color;
+      margin-bottom: @space-8;
+    }
+    input, select {
+      width: 100%;
+      padding: @space-8;
+      font-family: @font-family-primary;
+      font-size: @font-size-16;
+      border: 1px solid @grey-color;
+      border-radius: 4px;
+      background-color: @bg-primary-color;
+      color: @text-primary-color;
+      &:focus {
+        border-color: @active-color;
+        outline: none;
+      }
+    }
+  }
+  .submit-button {
+    width: 100%;
+    padding: @space-16;
+    font-family: @font-family-primary;
+    font-size: @font-size-16;
+    font-weight: @font-weight-bold;
+    color: @bg-primary-color;
+    background-color: @active-color;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color @transition-normal;
+    &:hover {
+      background-color: @active-color-hover;
+    }
+    &:focus {
+      background-color: @active-color-focus;
+      outline: none;
+    }
+  }
+  @media (max-width: @breakpoint-medium) {
+    padding: @space-16;
+    .form-title {
+      font-size: @font-size-20;
+    }
+  }
+}
+
+

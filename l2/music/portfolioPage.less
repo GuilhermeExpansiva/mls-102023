@@ -1,0 +1,33 @@
+/// <mls shortName="portfolioPage" project="102023" folder="music" groupName="music" enhancement="_100554_enhancementStyle" />
+
+ 
+// page: portfolioPage
+music--portfolio-page-102023 {
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  main {
+    flex: 1;
+    padding-top: @space-64;
+    padding-bottom: @space-64;
+  }
+  footer {
+    margin-top: auto;
+  }
+  @media (max-width: @breakpoint-medium) {
+    main {
+      padding-top: @space-48;
+      padding-bottom: @space-48;
+    }
+  }
+}
+
+

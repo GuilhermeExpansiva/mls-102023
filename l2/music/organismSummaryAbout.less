@@ -1,0 +1,55 @@
+/// <mls shortName="organismSummaryAbout" project="102023" folder="music" groupName="music" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-summary-about
+music--organism-summary-about-102023 {
+  .about-container {
+    padding: @space-48 @space-24;
+    background-color: @bg-secondary-color-lighter;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about-text {
+    flex: 1;
+    margin-right: @space-24;
+  }
+  .about-title {
+    font-family: @font-family-primary;
+    font-size: @font-size-24;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+    margin-bottom: @space-16;
+  }
+  .about-description {
+    font-size: @font-size-16;
+    line-height: @line-height-large;
+    color: @text-primary-color;
+  }
+  .about-photo {
+    flex: 0 0 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: @breakpoint-medium) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-text {
+      margin-right: 0;
+      margin-bottom: @space-24;
+    }
+    .about-photo {
+      flex: none;
+    }
+  }
+}
+
+

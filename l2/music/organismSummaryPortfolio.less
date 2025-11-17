@@ -1,0 +1,49 @@
+/// <mls shortName="organismSummaryPortfolio" project="102023" folder="music" groupName="music" enhancement="_100554_enhancementStyle" />
+
+ 
+// organism: organism-summary-portfolio
+music--organism-summary-portfolio-102023 {
+  .portfolio-container {
+    padding: @space-48 @space-24;
+    background-color: @bg-primary-color;
+    text-align: center;
+  }
+  .portfolio-title {
+    font-family: @font-family-primary;
+    font-size: @font-size-24;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+    margin-bottom: @space-32;
+  }
+  .portfolio-list {
+    display: flex;
+    justify-content: center;
+    gap: @space-32;
+  }
+  .portfolio-item {
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+  }
+  .portfolio-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: @space-16;
+  }
+  .portfolio-name {
+    font-size: @font-size-16;
+    font-weight: @font-weight-bold;
+    color: @text-primary-color;
+  }
+  @media (max-width: @breakpoint-medium) {
+    .portfolio-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    .portfolio-item {
+      margin-bottom: @space-24;
+    }
+  }
+}
+
+
